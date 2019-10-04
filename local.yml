@@ -1,0 +1,18 @@
+---
+- name: Configure UUG VM
+  hosts: all
+  become: true
+  roles:
+    - { role: common, tags: always, icon_mode: user }
+    - { role: user, tags: always }
+    - { role: wireless-printing, tags: always }
+    - { role: filezilla, tags: always }
+    - { role: basic-prog-pkgs, tags: ["cs101"] }
+    - { role: adv-prog-pkgs, tags: ["cs261", "cs361"] }
+    - { role: robot-pkgs, tags: ["cs354"] }
+    - { role: eclipse, tags: ["cs101", "cs149", "cs159"] }
+    - {role: jgrasp, tags: ["cs149"] }
+    - {role: finch, tags: ["cs101"] }
+    - {role: y86, tags: ["cs261"] }
+    - {role: programming-langs, tags: ["cs430"] }
+    - {role: vscode, tags: ["cs149"] }

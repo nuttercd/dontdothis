@@ -1,0 +1,7 @@
+---
+- name: Prepare the UUG VM for shipping
+  hosts: all
+  become: true
+  roles:
+    - {role: common, tags: ["oem"], icon_mode: oem }
+    - { role: oem, tags: ["oem"] }
