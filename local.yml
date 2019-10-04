@@ -5,7 +5,7 @@
   roles:
     - { role: common, tags: always, icon_mode: user }
     - { role: user, tags: always }
-    - { role: wireless-printing, tags: always }
+    - { role:wireless-printing, tags: always }
     - { role: filezilla, tags: always }
     - { role: basic-prog-pkgs, tags: ["cs101"] }
     - { role: adv-prog-pkgs, tags: ["cs261", "cs361"] }
